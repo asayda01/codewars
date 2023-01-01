@@ -19,6 +19,8 @@ This is the third kata in series:
 
 */
 
+/*
+
 export function findUniq(arr) {
     return arr.find(x => arr.indexOf(x) === arr.lastIndexOf(x) );
   };
@@ -26,4 +28,10 @@ export function findUniq(arr) {
   
   console.log ( findUniq([ 1, 1, 1, 2, 1, 1 ])    );
   console.log ( findUniq([ 4, 4, 'foo', 4 ])    );
-  
+
+*/
+
+export function findUniq ( arr ) {
+    let ans = arr.filter( x => Object.is( x , arr[0] ) ? false : true );
+    return ans.length === 1 ? ans.pop() : arr[0];
+  };
