@@ -2,9 +2,9 @@
   "name": "npm",
   "version": "1.0.0",
   "description": "codewars katas and their solutions",
-  "main": "Multiply.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/asayda01/codewars#readme",
   "devDependencies": {
-    "babel-install": "2.1.0"
+    "babel-install": "2.1.0",
+    "jest": "^29.3.1"
   }
 }
