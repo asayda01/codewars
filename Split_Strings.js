@@ -20,6 +20,8 @@ Examples:
 
 */
 
+/*
+
 export function solution(str){
     const arr = [];
     if (str.length % 2 !== 0) {
@@ -30,4 +32,9 @@ export function solution(str){
     };
     return arr;
 };
-  
+
+*/
+
+export function solution(str){
+  return ( str + "_" ).match( /.{2}/g ) || [] ;   
+};
